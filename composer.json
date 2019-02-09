@@ -12,6 +12,7 @@
     },
 		"repositories": [
 		{
+			"name": "lautschrift/masonry-pic-bundle",
 			"type": "git",
 			"url": "https://github.com/lautschrift/masonry-pic-bundle.git"
 		}
