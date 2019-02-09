@@ -8,15 +8,15 @@
         "contao/manager-bundle": "4.4.*",
         "contao/news-bundle": "^4.4",
         "contao/newsletter-bundle": "^4.4",
-		"lautschrift/masonry-pic-bundle": "dev-master"
+	"lautschrift/masonry-pic-bundle": "dev-master"
     },
-		"repositories": [
-		{
-			"name": "lautschrift/masonry-pic-bundle",
-			"type": "git",
-			"url": "https://github.com/lautschrift/masonry-pic-bundle.git"
-		}
-		],
+	"repositories": [
+	{
+		"name": "lautschrift/masonry-pic-bundle",
+		"type": "git",
+		"url": "https://github.com/lautschrift/masonry-pic-bundle.git"
+	}
+	],
 		"config": {
 		"preferred-install": {
 			"lautschrift/*": "source",
