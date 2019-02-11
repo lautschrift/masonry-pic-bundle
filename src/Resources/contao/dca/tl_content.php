@@ -6,15 +6,14 @@
 $strName = 'tl_content';
 
 /* Palettes */
-$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline;{description_legend},description,properties;{invisible_legend:hide},invisible,start,stop;';
+$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline,description;{description_legend},properties;{invisible_legend:hide},invisible,start,stop;';
 
 /* Fields */
 $GLOBALS['TL_DCA'][$strName]['fields']['description'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG'][$strName]['description'],
     'exclude'                 => true,
-    'inputType'               => 'textarea',
-    'eval'                    => array('rte' => 'tinyMCE'),
+    'inputType'               => 'text',
     'sql'                     => "text NOT NULL"
 );
 
