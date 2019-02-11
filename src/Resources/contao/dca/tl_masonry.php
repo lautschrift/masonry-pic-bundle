@@ -1,5 +1,5 @@
 <?php
-// dca/tl_masonry.php
+
 /**
  * Table tl_masonry
  */
