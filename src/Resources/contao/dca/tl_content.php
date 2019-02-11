@@ -7,7 +7,8 @@ $strName = 'tl_content';
 
 
 /* Palettes */
-$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline;{description_legend}ls_masonry_properties,ls_masonry_link;{invisible_legend:hide},invisible,start,stop;';
+$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline;{description_legend},ls_masonry_properties,ls_masonry_link;{invisible_legend:hide},invisible,start,stop;';
+
 
 /* Fields */
 $GLOBALS['TL_DCA'][$strName]['fields']['ls_masonry_properties'] = array
