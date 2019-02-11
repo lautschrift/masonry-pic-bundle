@@ -36,13 +36,13 @@ $GLOBALS['TL_DCA'][$strName] = array
     ),
 
     /* Fields */
-    'id' => array
-    (
-        'sql'                     => "int(10) unsigned NOT NULL auto_increment"
-    ),
-
     'fields' => array
     (
+        'id' => array
+        (
+            'sql'                     => "int(10) unsigned NOT NULL auto_increment"
+        ),
+        
         'description' => array
         (
             'label'                   => &$GLOBALS['TL_LANG'][$strName]['description'],
