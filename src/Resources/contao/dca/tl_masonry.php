@@ -9,10 +9,30 @@ $strName = 'tl_masonry';
 $GLOBALS['TL_DCA'][$strName] = array
 (
     /* Palettes */
+   'config' => array
+   (
+       'dataContainer'                   => 'Table',
+       'enableVersioning'                => true,
+       'sql' => array
+       (
+           'keys' => array
+           (
+               'id' => 'primary'
+           )
+       )
+   ),
+
+    /* Palettes */
     'palettes' => array
     (
         '__selector__'  => array(''),
         'default'       => '{type_legend},type,headline;{description_legend,}description,linkto, pic;{invisible_legend:hide},invisible,start,stop;'
+    ),
+
+    // Subpalettes
+    'subpalettes' => array
+    (
+        ''                            => ''
     ),
 
     /* Fields */
