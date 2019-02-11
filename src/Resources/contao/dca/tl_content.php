@@ -6,7 +6,7 @@
 $strName = 'tl_content';
 
 /* Palettes */
-$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline,description;{description_legend},linkto, pic;{invisible_legend:hide},invisible,start,stop;';
+$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline;{description_legend,}description,linkto, pic;{invisible_legend:hide},invisible,start,stop;';
 
 /* Fields */
 $GLOBALS['TL_DCA'][$strName]['fields']['description'] = array
@@ -21,7 +21,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['linkto'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG'][$strName]['properties'],
     'exclude'                 => true,
-    'inputType'               => 'pageTree',
+    'inputType'               => 'hyperlink',
     'sql'                     => "text NOT NULL"
 );
 
