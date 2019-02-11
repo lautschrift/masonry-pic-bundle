@@ -1,7 +1,7 @@
 <?php
 // dca/tl_masonry.php
 /**
- * Table tl_content
+ * Table tl_masonry
  */
 $strName = 'tl_masonry';
 
