@@ -16,6 +16,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['ls_masonry_properties'] = array
     'label'                   => &$GLOBALS['TL_LANG'][$strName]['ls_masonry_properties'],
     'exclude'                 => true,
     'inputType'               => 'text',
+    'eval'                    => array('tl_class' => 'w50'),
     'sql'                     => "text NOT NULL"
 );
 
