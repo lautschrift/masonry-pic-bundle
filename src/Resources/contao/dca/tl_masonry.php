@@ -25,8 +25,8 @@ $GLOBALS['TL_DCA'][$strName] = array
     /* Palettes */
     'palettes' => array
     (
-        
-        'default'       => '{type_legend},type,headline;{description_legend,}description,linkto, pic;{invisible_legend:hide},invisible,start,stop;'
+        '__selector__'  => array(''),
+        'default'       => 'description,properties'
     ),
 
     // Subpalettes
@@ -55,7 +55,7 @@ $GLOBALS['TL_DCA'][$strName] = array
         (
             'label'                   => &$GLOBALS['TL_LANG'][$strName]['properties'],
             'exclude'                 => true,
-            'inputType'               => 'hyperlink',
+            'inputType'               => 'text',
             'sql'                     => "text NOT NULL"
         )
 
