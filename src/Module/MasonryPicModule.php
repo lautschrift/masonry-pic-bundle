@@ -7,7 +7,7 @@ class MasonryPicModule extends \ContentElement
     /**
      * @var string
      */
-    protected $strTemplate = 'mod_masonryPic';
+    protected $strTemplate = 'fe_masonryPic';
 
     /**
      * Displays a wildcard in the back end.
