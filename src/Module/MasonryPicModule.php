@@ -19,7 +19,8 @@ class MasonryPicModule extends \ContentElement
         if (TL_MODE == 'BE') {
             $template = new \BackendTemplate('be_wildcard');
 
-            $template->wildcard = '### '.utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['masonrypic'][0]).' ###';
+            //$template->wildcard = '### '.utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['masonrypic'][0]).' ###';
+            $template->wildcard = "### MasonryPic ###";
             $template->title = $this->headline;
             $template->id = $this->id;
             $template->link = $this->name;
