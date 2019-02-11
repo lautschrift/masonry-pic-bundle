@@ -2,7 +2,7 @@
 
 namespace Lautschrift\MasonryPicBundle\Module;
 
-class MasonryPicModule extends \Module
+class MasonryPicModule extends \ContentElement
 {
     /**
      * @var string
@@ -37,5 +37,8 @@ class MasonryPicModule extends \Module
     protected function compile()
     {
         $this->Template->message = 'Hello World';
+        if ($this->productproperties != '') {
+            $this->Template->arrProperties = deserialize($this->productproperties, true);
+        }
     }
 }
