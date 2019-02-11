@@ -16,7 +16,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['ls_masonry_properties'] = array
     'label'                   => &$GLOBALS['TL_LANG'][$strName]['ls_masonry_properties'],
     'exclude'                 => true,
     'inputType'               => 'text',
-    'sql'                     => "varchar(255) NOT NULL default ''"
+    'sql'                     => "text NOT NULL"
 );
 
 $GLOBALS['TL_DCA'][$strName]['fields']['ls_masonry_link'] = array
