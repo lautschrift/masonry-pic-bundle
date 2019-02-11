@@ -36,6 +36,11 @@ $GLOBALS['TL_DCA'][$strName] = array
     ),
 
     /* Fields */
+    'id' => array
+    (
+        'sql'                     => "int(10) unsigned NOT NULL auto_increment"
+    ),
+
     'fields' => array
     (
         'description' => array
