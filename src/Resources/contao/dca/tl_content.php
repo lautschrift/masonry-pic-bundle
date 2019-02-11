@@ -12,7 +12,7 @@ $GLOBALS['TL_DCA'][$strName] = array
     /* Palettes */
     'palettes' => array
     (
-        '__selector__'  => array(''),
+        
         'default'       => '{type_legend},type,headline;{description_legend,}ls_masonry_properties,ls_masonry_link;{invisible_legend:hide},invisible,start,stop;'
     ),
 
