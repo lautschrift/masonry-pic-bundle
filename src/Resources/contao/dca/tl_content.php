@@ -1,32 +1,19 @@
 <?php
 
 /**
- * Table tl_masonry
+ * Table tl_content
  */
-$strName = 'tl_masonry';
+$strName = 'tl_content';
 
 
 $GLOBALS['TL_DCA'][$strName] = array
 (
-    /* Palettes */
-   'config' => array
-   (
-       'dataContainer'                   => 'Table',
-       'enableVersioning'                => true,
-       'sql' => array
-       (
-           'keys' => array
-           (
-               'id' => 'primary'
-           )
-       )
-   ),
 
     /* Palettes */
     'palettes' => array
     (
         '__selector__'  => array(''),
-        'default'       => 'description,properties'
+        'default'       => '{type_legend},type,headline;{description_legend,}ls_masonry_properties,ls_masonry_link;{invisible_legend:hide},invisible,start,stop;'
     ),
 
     // Subpalettes
@@ -38,25 +25,22 @@ $GLOBALS['TL_DCA'][$strName] = array
     /* Fields */
     'fields' => array
     (
-        'id' => array
-        (
-            'sql'                     => "int(10) unsigned NOT NULL auto_increment"
-        ),
 
-        'description' => array
+        'ls_masonry_description' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG'][$strName]['description'],
+            'label'                   => &$GLOBALS['TL_LANG'][$strName]['ls_masonry_description'],
             'exclude'                 => true,
             'inputType'               => 'text',
             'sql'                     => "text NOT NULL"
         ),
 
-        'linkto' => array
+        'ls_masonry_link' => array
         (
-            'label'                   => &$GLOBALS['TL_LANG'][$strName]['properties'],
+            'label'                   => &$GLOBALS['TL_LANG'][$strName]['ls_masonry_properties'],
             'exclude'                 => true,
             'inputType'               => 'text',
-            'sql'                     => "text NOT NULL"
+            'eval'                    => array('rgxp'=>'url', 'decodeEntities'=>true, 'maxlength'=>255, 'dcaPicker'=>true, 'tl_class'=>'w50 wizard'),
+            'sql'                     => "varchar(255) NOT NULL default ''"
         )
 
     )
