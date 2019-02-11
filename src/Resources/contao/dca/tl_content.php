@@ -6,7 +6,7 @@
 $strName = 'tl_content';
 
 /* Palettes */
-$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline,description;{description_legend},properties;{invisible_legend:hide},invisible,start,stop;';
+$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline,description;{description_legend},linkto, pic;{invisible_legend:hide},invisible,start,stop;';
 
 /* Fields */
 $GLOBALS['TL_DCA'][$strName]['fields']['description'] = array
@@ -17,11 +17,18 @@ $GLOBALS['TL_DCA'][$strName]['fields']['description'] = array
     'sql'                     => "text NOT NULL"
 );
 
-$GLOBALS['TL_DCA'][$strName]['fields']['properties'] = array
+$GLOBALS['TL_DCA'][$strName]['fields']['linkto'] = array
 (
     'label'                   => &$GLOBALS['TL_LANG'][$strName]['properties'],
     'exclude'                 => true,
-    'inputType'               => 'textarea',
-    'eval'                    => array('rte' => 'tinyMCE'),
+    'inputType'               => 'pageTree',
+    'sql'                     => "text NOT NULL"
+);
+
+$GLOBALS['TL_DCA'][$strName]['fields']['pic'] = array
+(
+    'label'                   => &$GLOBALS['TL_LANG'][$strName]['pic'],
+    'exclude'                 => true,
+    'inputType'               => 'fileTree',
     'sql'                     => "text NOT NULL"
 );
