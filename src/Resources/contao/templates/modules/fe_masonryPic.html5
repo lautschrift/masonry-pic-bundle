@@ -1,3 +1,5 @@
+<div class="grid-item">
+
 <?php if ($this->ls_masonry_link): ?>
   <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
 <?php endif; ?>
@@ -14,3 +16,5 @@
 <?php if ($this->ls_masonry_link): ?>
   </a>
 <?php endif; ?>
+
+</div>
