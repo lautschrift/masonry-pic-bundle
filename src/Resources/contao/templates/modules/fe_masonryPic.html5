@@ -4,7 +4,7 @@
   <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
 <?php endif; ?>
 
-  <div>
+
     <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
     <div class="info">
       <p>
@@ -13,7 +13,7 @@
         <?php if($this->ls_masonry_properties): ?><p><?= $this->ls_masonry_properties ?></p><?php endif; ?>
       </p>
     </div>
-  </div>
+
 
 <?php if ($this->ls_masonry_link): ?>
   </a>
