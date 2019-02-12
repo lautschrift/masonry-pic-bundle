@@ -7,11 +7,11 @@
 
     <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
     <div class="info">
-      <desc>
+      <div class"link-content">
         <span class="configurable"> + <br></span>
         <?php if($this->headline): ?><<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>><?php endif; ?>
         <?php if($this->ls_masonry_properties): ?><p><?= $this->ls_masonry_properties ?></p><?php endif; ?>
-      </desc>
+      </div>
     </div>
 
 
