@@ -43,7 +43,6 @@ class MasonryPicModule extends \ContentElement
 
     protected function compile()
     {
-        $this->Template->message = 'Hello World';
         if ($this->ls_masonry_properties != '') {
             $this->Template->arrProperties = deserialize($this->ls_masonry_properties, true);
         }
