@@ -7,4 +7,4 @@ $strName = 'tl_content';
 
 
 /* Palettes */
-$GLOBALS['TL_DCA'][$strName]['palettes']['masonrygrid_start'] = '{nothing_legend}';
+$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{nothing_legend}';

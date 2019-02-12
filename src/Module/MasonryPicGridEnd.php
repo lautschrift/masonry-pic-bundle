@@ -2,12 +2,12 @@
 
 namespace Lautschrift\MasonryPicBundle\Module;
 
-class MasonryPicGrid extends \ContentElement
+class MasonryPicGridEnd extends \ContentElement
 {
     /**
      * @var string
      */
-    protected $strTemplate = 'fe_masonryGridStart';
+    protected $strTemplate = 'fe_masonryGridEnd';
 
     /**
      * Displays a wildcard in the back end.
@@ -20,7 +20,7 @@ class MasonryPicGrid extends \ContentElement
             $template = new \BackendTemplate('be_wildcard');
 
             //$template->wildcard = '### '.utf8_strtoupper($GLOBALS['TL_LANG']['FMD']['masonrypic'][0]).' ###';
-            $template->wildcard = "### Masonry Grid START ###";
+            $template->wildcard = "### Masonry Grid END ###";
             $template->title = $this->headline;
             $template->id = $this->id;
             $template->link = $this->name;
