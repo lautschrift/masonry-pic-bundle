@@ -1,7 +1,16 @@
-<?php $this->extend('block_searchable'); ?>
+<?php if ($this->ls_masonry_link): ?>
+  <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
+<?php endif; ?>
 
-<?php $this->block('content'); ?>
+  <div>
+    <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
+    <div class="info">
+        <span class="configurable"> + <br></span>
+        <?php if($this->headline): ?><<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>><?php endif; ?>
+        <?php if($this->ls_masonry_properties): ?><?= $this->ls_masonry_properties ?><?php endif; ?>
+    </div>
+  </div>
 
-<?= $this->message; ?>
-
-<?php $this->endblock(); ?>
+<?php if ($this->ls_masonry_link): ?>
+  </a>
+<?php endif; ?>
