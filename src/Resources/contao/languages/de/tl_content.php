@@ -9,6 +9,7 @@ $strName = 'tl_content';
 /**
  * Fields
  */
+$GLOBALS['TL_LANG'][$strName]['ls_masonry_sign'] = array('Vorzeichen', 'Bitte geben Sie das Vorzeichen ein.');
 $GLOBALS['TL_LANG'][$strName]['ls_masonry_properties'] = array('Beschreibung', 'Bitte geben Sie die Bild-Beschreibung ein.');
 $GLOBALS['TL_LANG'][$strName]['ls_masonry_link']  = array('Link', 'Bitte geben Sie den Link für die Folgeseite ein.');
 
