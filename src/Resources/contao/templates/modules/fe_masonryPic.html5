@@ -1,4 +1,4 @@
-<div class="grid-item">
+<div class="grid-item <?= $this->class ?>" ?= $this->cssID ?>>
 
 <?php if ($this->ls_masonry_link): ?>
   <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
@@ -8,7 +8,7 @@
     <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
     <div class="info">
       <div class="link-content">
-        <?php if($this->ls_masonry_sign): ?><span class="sign"><?php echo $this->ls_masonry_sign; ?>><br></span><?php endif; ?>
+        <?php if($this->ls_masonry_sign): ?><span class="sign"><?php echo $this->ls_masonry_sign; ?><br></span><?php endif; ?>
         <?php if($this->headline): ?><<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>><?php endif; ?>
         <?php if($this->ls_masonry_properties): ?><p><?= $this->ls_masonry_properties ?></p><?php endif; ?>
       </div>
