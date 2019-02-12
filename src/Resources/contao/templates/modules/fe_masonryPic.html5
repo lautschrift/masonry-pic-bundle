@@ -1,4 +1,4 @@
-<div class="grid-item <?= $this->class ?>" ?= $this->cssID ?>>
+<div class="grid-item <?= $this->class ?>" <?= $this->cssID ?>>
 
 <?php if ($this->ls_masonry_link): ?>
   <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
