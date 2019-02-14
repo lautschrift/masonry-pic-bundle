@@ -45,3 +45,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['customTpl'] = array
 	'eval'                    => array('includeBlankOption'=>true, 'chosen'=>true, 'tl_class'=>'w50'),
 	'sql'                     => "varchar(64) NOT NULL default 'fe_masonryPic'"
 );
+
+class tl_content extends Backend
+{
+  public function getElementTemplates(DataContainer $dc)
+  {
+    return $this->getTemplateGroup('ce_' . $dc->activeRecord->type);
+  }
+}
