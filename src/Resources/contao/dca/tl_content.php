@@ -41,7 +41,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['customTpl'] = array
 	'label'                   => &$GLOBALS['TL_LANG']['tl_content']['customTpl'],
 	'exclude'                 => true,
 	'inputType'               => 'select',
-	'options_callback'        => array('tl_content', 'getElementTemplates'),
+	'options_callback'        => array('tl_masonry_content', 'getElementTemplates'),
 	'eval'                    => array('includeBlankOption'=>true, 'chosen'=>true, 'tl_class'=>'w50'),
 	'sql'                     => "varchar(64) NOT NULL default 'fe_masonryPic'"
 );
