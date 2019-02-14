@@ -46,7 +46,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['customTpl'] = array
 	'sql'                     => "varchar(64) NOT NULL default 'fe_masonryPic'"
 );
 
-class tl_content extends Backend
+class tl_masonry_content extends Backend
 {
   public function getElementTemplates(DataContainer $dc)
   {
