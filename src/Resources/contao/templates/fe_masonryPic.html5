@@ -4,6 +4,10 @@
   <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
 <?php endif; ?>
 
+<?php if ($this->fullsize): ?>
+	<div class="ls_masonry_lightbox"></div>
+	<a href="<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>"  data-lightbox="<?= $this->tstamp ?>">
+<?php endif; ?>
 
     <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
 	<?php if ($this->ls_masonry_link): ?>
@@ -18,6 +22,11 @@
 
 <?php if ($this->ls_masonry_link): ?>
   </a>
+<?php endif; ?>
+
+<?php if ($this->fullsize): ?>
+  </a>
+  </div>
 <?php endif; ?>
 
 </div>
