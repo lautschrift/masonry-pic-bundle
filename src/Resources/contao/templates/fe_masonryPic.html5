@@ -5,7 +5,6 @@
 <?php endif; ?>
 
 <?php if ($this->fullsize): ?>
-	<div class="ls_masonry_lightbox">
 	<a href="<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>"  data-lightbox="<?= $this->tstamp ?>">
 <?php endif; ?>
 
@@ -20,13 +19,20 @@
     </div>
 	<?php endif; ?>
 
+<?php if ($this->fullsize): ?>
+    <div class="info">
+      <div class="link-content">
+        <span class="fa fa-expand"></span>
+      </div>
+    </div>
+	<?php endif; ?>
+
 <?php if ($this->ls_masonry_link): ?>
   </a>
 <?php endif; ?>
 
 <?php if ($this->fullsize): ?>
   </a>
-  </div>
 <?php endif; ?>
 
 </div>
