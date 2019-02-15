@@ -7,7 +7,7 @@ $strName = 'tl_content';
 
 
 /* Palettes */
-$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline;{source_legend},singleSRC,size,imagemargin,overwriteMeta;{template_legend:hide},customTpl;{description_legend},ls_masonry_sign,ls_masonry_properties,ls_masonry_link;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop;';
+$GLOBALS['TL_DCA'][$strName]['palettes']['masonrypic'] = '{type_legend},type,headline;{source_legend},singleSRC,size,imagemargin,fullsize,overwriteMeta;{template_legend:hide},customTpl;{description_legend},ls_masonry_sign,ls_masonry_properties,ls_masonry_link;{expert_legend:hide},guests,cssID;{invisible_legend:hide},invisible,start,stop;';
 
 
 /* Fields */

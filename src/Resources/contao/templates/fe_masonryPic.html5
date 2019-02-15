@@ -6,16 +6,15 @@
 
 
     <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
+	<?php if ($this->ls_masonry_link): ?>
     <div class="info">
-      <?php if ($this->ls_masonry_link): ?>
       <div class="link-content">
         <?php if($this->ls_masonry_sign): ?><span class="sign"><?php echo $this->ls_masonry_sign; ?><br></span><?php endif; ?>
         <?php if($this->headline): ?><<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>><?php endif; ?>
         <?php if($this->ls_masonry_properties): ?><p><?= $this->ls_masonry_properties ?></p><?php endif; ?>
       </div>
-      <?php endif; ?>
     </div>
-
+	<?php endif; ?>
 
 <?php if ($this->ls_masonry_link): ?>
   </a>
