@@ -5,7 +5,7 @@
 <?php endif; ?>
 
 <?php if ($this->fullsize): ?>
-	<a href="<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>"  data-lightbox="<?= $this->tstamp ?>">
+	<a href="<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>"  data-lightbox="ls_masonry_group">
 <?php endif; ?>
 
     <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>

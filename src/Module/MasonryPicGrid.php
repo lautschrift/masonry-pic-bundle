@@ -7,7 +7,7 @@ class MasonryPicGrid extends \ContentElement
     /**
      * @var string
      */
-    protected $strTemplate = 'fe_masonryGridStart';
+    protected $strTemplate = 'ce_masonryGridStart';
 
     /**
      * Displays a wildcard in the back end.
