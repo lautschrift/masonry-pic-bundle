@@ -7,7 +7,7 @@ class MasonryPicGridEnd extends \ContentElement
     /**
      * @var string
      */
-    protected $strTemplate = 'ce_masonryGridEnd';
+    protected $strTemplate = 'ce_masonrygridend';
 
     /**
      * Displays a wildcard in the back end.
