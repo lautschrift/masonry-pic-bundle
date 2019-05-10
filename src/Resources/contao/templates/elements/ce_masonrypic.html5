@@ -1,14 +1,22 @@
 <div class="grid-item <?= $this->class ?>" <?= $this->cssID ?>>
+ <?php $objFile = \FilesModel::findByUuid($this->arrData['singleSRC'])->meta;
+	  $arrFileMeta = unserialize( $objFile);
+	  global $objPage;
+	  $titleLang = $objPage->language;
+ 	  $title =  $arrFileMeta[$titleLang]['title'];
+ 	  $alt =  $arrFileMeta[$titleLang]['alt'];
+?>
 
 <?php if ($this->ls_masonry_link): ?>
   <a href="<?= $this->ls_masonry_link ?>"<?php if ($this->linkTitle): ?> title="<?= $this->linkTitle ?>"<?php endif; ?><?= $this->attributes ?>>
 <?php endif; ?>
 
 <?php if ($this->fullsize): ?>
-	<a href="<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>"  data-lightbox="ls_masonry_group">
+	<a href="<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>" title="<?php echo $title ?>" data-lightbox="ls_masonry_group">
 <?php endif; ?>
 
-    <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>'>
+    <img src='<?php echo \FilesModel::findByUuid($this->arrData['singleSRC'])->path; ?>' title="<?php echo $title ?>" alt="<?php echo $alt ?>">
+
 	<?php if ($this->ls_masonry_link): ?>
     <div class="info">
       <div class="link-content">
